@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071f3b">
+<title>NPK Business Solutions | Company Hub</title>
+<link rel="icon" href="assets/npk-logo.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <img class="brand-logo" src="assets/npk-logo.jpg" alt="NPK Business Solutions Pvt Ltd logo">
+      <div class="brand-copy"><strong>NPK</strong><span>BUSINESS SOLUTIONS</span><small>PVT LTD</small></div>
+    </div>
+    <div class="workspace-label">WORKSPACE <span class="dot"></span></div>
+    <nav id="mainNav" aria-label="Main navigation">
+      <button class="nav-item active" data-page="Dashboard"><span class="nav-icon">◫</span>Dashboard</button>
+      <div class="nav-caption">PEOPLE</div>
+      <button class="nav-item" data-page="Employees"><span class="nav-icon">♙</span>Employees <span class="nav-count">152</span></button>
+      <button class="nav-item" data-page="Attendance"><span class="nav-icon">◷</span>Attendance</button>
+      <button class="nav-item" data-page="Leave Management"><span class="nav-icon">▣</span>Leave management <span class="nav-count amber">14</span></button>
+      <button class="nav-item" data-page="Departments"><span class="nav-icon">♧</span>Departments</button>
+      <button class="nav-item" data-page="Team Management"><span class="nav-icon">♧</span>Team management</button>
+      <div class="nav-caption">WORK</div>
+      <button class="nav-item" data-page="Projects"><span class="nav-icon">▤</span>Projects <span class="nav-count">12</span></button>
+      <button class="nav-item" data-page="Tasks"><span class="nav-icon">☷</span>Tasks</button>
+      <button class="nav-item" data-page="Timesheets"><span class="nav-icon">◴</span>Timesheets</button>
+      <button class="nav-item" data-page="Meetings"><span class="nav-icon">▦</span>Meetings</button>
+      <div class="nav-caption">COMPANY</div>
+      <button class="nav-item" data-page="Announcements"><span class="nav-icon">♢</span>Announcements</button>
+      <button class="nav-item" data-page="Documents"><span class="nav-icon">▧</span>Documents</button>
+      <button class="nav-item" data-page="Assets"><span class="nav-icon">▣</span>Company assets</button>
+      <button class="nav-item" data-page="Reports"><span class="nav-icon">▥</span>Reports & analytics</button>
+      <button class="nav-item" data-page="Settings"><span class="nav-icon">⚙</span>Settings</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="help-card"><div class="help-icon">✦</div><strong>Build. Innovate. Grow.</strong><p>One team. One workspace.</p><div class="help-lines"><i></i><i></i><i></i></div></div>
+      <div class="sidebar-user"><div class="avatar avatar-teal">SB</div><div><strong>Sujith Bobba</strong><small>Super Admin</small></div><button class="more-btn" aria-label="Profile options">···</button></div>
+    </div>
+  </aside>
+
+  <main class="main-area">
+    <header class="topbar">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      <div class="crumb"><img class="crumb-logo" src="assets/npk-logo.jpg" alt="NPK logo"><strong>NPK Business Solutions Pvt Ltd</strong><span class="crumb-sep">/</span><span id="crumbPage">Dashboard</span></div>
+      <label class="searchbox"><span>⌕</span><input id="globalSearch" placeholder="Search employees, projects, tasks..." autocomplete="off"><kbd>⌘ K</kbd></label>
+      <button class="icon-button notification-button" id="notificationsBtn" aria-label="Notifications">♧<i></i></button>
+      <div class="top-profile"><div class="avatar avatar-photo">SB</div><div><strong>Sujith Bobba</strong><small><span class="online-dot"></span>Super Admin</small></div><span class="chevron">⌄</span></div>
+    </header>
+
+    <section class="page-content" id="pageContent">
+      <div class="welcome-row">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span>WEDNESDAY, NOVEMBER 25, 2026</div><h1>Good morning, Sujith <span class="wave">✦</span></h1><p>Here's what's happening across your company today.</p></div>
+        <div class="welcome-actions"><button class="btn btn-light" id="exportBtn">↧ Export report</button><button class="btn btn-primary" id="quickActionBtn">＋ Quick action</button></div>
+      </div>
+      <section class="hero-banner">
+        <div class="hero-copy"><div class="hero-chip"><span></span> COMPANY OVERVIEW</div><h2>Great work happens<br>when we <em>work as one.</em></h2><p>Your people, projects and progress — all in one place.</p><button class="hero-link" data-goto="Projects">Explore projects <span>↗</span></button></div>
+        <div class="hero-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="building building-back"></div><div class="building building-front"><div class="building-logo">NPK<span>BUSINESS SOLUTIONS</span></div><div class="window-grid"></div></div><div class="art-glow"></div></div>
+        <div class="hero-corner">NPK <span>·</span> PEOPLE. PURPOSE. PROGRESS.</div>
+      </section>
+
+      <div class="section-heading"><div><h2>Company at a glance</h2><p>Key metrics for today</p></div><button class="text-button" data-goto="Reports">View analytics <span>→</span></button></div>
+      <div class="metrics-grid">
+        <article class="metric-card"><div class="metric-top"><span class="metric-icon blue">♙</span><span class="metric-trend positive">↗ 5.2%</span></div><div class="metric-label">Total employees</div><div class="metric-value" id="employeeMetric">152</div><div class="metric-foot"><span>vs. last month</span><div class="spark spark-blue"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-icon mint">◷</span><span class="metric-trend positive">↗ 2.8%</span></div><div class="metric-label">Present today</div><div class="metric-value"><span id="presentMetric">138</span><small class="metric-denom"> / 152</small></div><div class="metric-foot"><span>90.8% attendance</span><div class="spark spark-green"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-icon violet">▤</span><span class="metric-trend positive">↗ 1 new</span></div><div class="metric-label">Active projects</div><div class="metric-value" id="projectMetric">12</div><div class="metric-foot"><span>Across 4 departments</span><div class="spark spark-violet"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-icon amber">☷</span><span class="metric-trend negative">3 overdue</span></div><div class="metric-label">Open tasks</div><div class="metric-value" id="taskMetric">86</div><div class="metric-foot"><span>24 completed this week</span><div class="spark spark-amber"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></article>
+      </div>
+
+      <div class="dashboard-grid">
+        <section class="panel overview-panel">
+          <div class="panel-header"><div><h3>Work overview</h3><p>Project delivery over the last 6 months</p></div><select id="chartRange" aria-label="Chart time range"><option>Last 6 months</option><option>Last 30 days</option><option>This year</option></select></div>
+          <div class="chart-legend"><span><i class="legend-dot dot-blue"></i>Projects completed</span><span><i class="legend-dot dot-teal"></i>Tasks completed</span></div>
+          <div class="line-chart"><div class="y-labels"><span>100</span><span>75</span><span>50</span><span>25</span><span>0</span></div><div class="chart-plot"><div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 600 190" preserveAspectRatio="none" role="img" aria-label="Projects and tasks completion trend"><defs><linearGradient id="areaBlue" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#4388f5" stop-opacity=".22"/><stop offset="100%" stop-color="#4388f5" stop-opacity="0"/></linearGradient><linearGradient id="areaTeal" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#16b8a6" stop-opacity=".16"/><stop offset="100%" stop-color="#16b8a6" stop-opacity="0"/></linearGradient></defs><path d="M0 115 C45 95 55 110 100 82 S180 50 220 80 S300 105 340 68 S420 72 460 42 S540 58 600 22 L600 190 L0 190Z" fill="url(#areaBlue)"/><path d="M0 135 C50 128 65 142 100 125 S180 145 220 110 S300 100 340 112 S420 82 460 95 S540 65 600 58 L600 190 L0 190Z" fill="url(#areaTeal)"/><path d="M0 115 C45 95 55 110 100 82 S180 50 220 80 S300 105 340 68 S420 72 460 42 S540 58 600 22" fill="none" stroke="#4388f5" stroke-width="3" vector-effect="non-scaling-stroke"/><path d="M0 135 C50 128 65 142 100 125 S180 145 220 110 S300 100 340 112 S420 82 460 95 S540 65 600 58" fill="none" stroke="#16b8a6" stroke-width="3" vector-effect="non-scaling-stroke"/><g fill="#fff" stroke-width="3"><circle cx="0" cy="115" r="4.5" stroke="#4388f5"/><circle cx="100" cy="82" r="4.5" stroke="#4388f5"/><circle cx="220" cy="80" r="4.5" stroke="#4388f5"/><circle cx="340" cy="68" r="4.5" stroke="#4388f5"/><circle cx="460" cy="42" r="4.5" stroke="#4388f5"/><circle cx="600" cy="22" r="4.5" stroke="#4388f5"/><circle cx="0" cy="135" r="4.5" stroke="#16b8a6"/><circle cx="100" cy="125" r="4.5" stroke="#16b8a6"/><circle cx="220" cy="110" r="4.5" stroke="#16b8a6"/><circle cx="340" cy="112" r="4.5" stroke="#16b8a6"/><circle cx="460" cy="95" r="4.5" stroke="#16b8a6"/><circle cx="600" cy="58" r="4.5" stroke="#16b8a6"/></g></svg><div class="x-labels"><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span></div></div></div>
+        </section>
+        <section class="panel attendance-panel">
+          <div class="panel-header"><div><h3>Attendance today</h3><p>Employee check-in summary</p></div><button class="mini-link" data-goto="Attendance">Details ↗</button></div>
+          <div class="attendance-content"><div class="donut-wrap"><div class="donut"><div><strong id="attendancePercent">91%</strong><span>Present</span></div></div></div><div class="attendance-legend"><div><i class="status-dot present"></i><span>Present</span><strong id="presentLegend">138</strong></div><div><i class="status-dot absent"></i><span>Absent</span><strong>10</strong></div><div><i class="status-dot leave"></i><span>On leave</span><strong>4</strong></div></div></div>
+          <div class="attendance-note"><span class="pulse"></span> Attendance is updated from today's records <span class="note-time">Live demo data</span></div>
+        </section>
+        <section class="panel tasks-panel">
+          <div class="panel-header"><div><h3>Priority tasks</h3><p>Keep the team moving forward</p></div><button class="mini-link" data-goto="Tasks">View all →</button></div>
+          <div id="taskList" class="task-list">
+            <label class="task-row"><input type="checkbox"><span class="task-check"></span><span class="task-info"><strong>Complete API integration</strong><small>CRM Platform <b>·</b> Engineering</small></span><span class="priority high">High</span></label>
+            <label class="task-row"><input type="checkbox"><span class="task-check"></span><span class="task-info"><strong>Prepare project report</strong><small>Analytics Dashboard <b>·</b> Operations</small></span><span class="priority medium">Medium</span></label>
+            <label class="task-row"><input type="checkbox"><span class="task-check"></span><span class="task-info"><strong>Review UI design</strong><small>Employee Portal <b>·</b> Design</small></span><span class="priority low">Low</span></label>
+            <label class="task-row"><input type="checkbox"><span class="task-check"></span><span class="task-info"><strong>Update documentation</strong><small>Internal Tools <b>·</b> Engineering</small></span><span class="priority medium">Medium</span></label>
+          </div>
+          <button class="add-inline" id="addTaskBtn">＋ Add a task</button>
+        </section>
+        <section class="panel announcement-panel">
+          <div class="panel-header"><div><h3>Company announcements</h3><p>Updates for the whole team</p></div><button class="mini-link" data-goto="Announcements">All updates →</button></div>
+          <div class="announcement-feature"><div class="announcement-art"><span>✦</span><i></i><i></i><i></i></div><div class="announcement-copy"><span class="announcement-tag">COMPANY CULTURE</span><h4>Building a better workplace, together</h4><p>Check the latest updates and important company notices.</p><small>Posted by HR Team · Nov 24, 2026</small></div></div>
+        </section>
+        <section class="panel meetings-panel">
+          <div class="panel-header"><div><h3>Upcoming meetings</h3><p>Make time for what matters</p></div><button class="mini-link" data-goto="Meetings">Calendar →</button></div>
+          <div class="meeting-list"><div class="meeting-row"><div class="date-tile"><b>NOV</b><strong>25</strong></div><div class="meeting-info"><strong>Project sync meeting</strong><small>10:30 AM – 11:30 AM · Meeting room A</small></div><span class="meeting-type blue-type">Team</span></div><div class="meeting-row"><div class="date-tile"><b>NOV</b><strong>26</strong></div><div class="meeting-info"><strong>Team stand-up</strong><small>11:00 AM – 11:30 AM · Online</small></div><span class="meeting-type teal-type">Daily</span></div><div class="meeting-row"><div class="date-tile"><b>NOV</b><strong>27</strong></div><div class="meeting-info"><strong>Management review</strong><small>03:00 PM – 04:00 PM · Board room</small></div><span class="meeting-type violet-type">Review</span></div></div>
+        </section>
+        <section class="panel activity-panel">
+          <div class="panel-header"><div><h3>Recent activity</h3><p>What's happening around NPK</p></div><button class="mini-link" data-goto="Reports">Activity log →</button></div>
+          <div class="activity-list"><div class="activity-row"><span class="activity-marker blue-marker"></span><div><p><strong>Harish Kumar</strong> completed <b>API testing</b></p><small>Projects · 12 minutes ago</small></div></div><div class="activity-row"><span class="activity-marker amber-marker"></span><div><p><strong>Priya Sharma</strong> requested leave</p><small>HR · 28 minutes ago</small></div></div><div class="activity-row"><span class="activity-marker teal-marker"></span><div><p>New project <strong>Analytics v2</strong> created</p><small>Projects · 1 hour ago</small></div></div><div class="activity-row"><span class="activity-marker violet-marker"></span><div><p><strong>Ravi Teja</strong> checked in at 09:15 AM</p><small>Attendance · 1 hour ago</small></div></div></div>
+        </section>
+      </div>
+      <footer class="footer"><span>© 2026 <strong>NPK Business Solutions Pvt Ltd.</strong> All rights reserved.</span><div><a href="#" data-goto="Settings">Privacy</a><a href="#" data-goto="Settings">Terms</a><a href="mailto:support@npkbusinesssolutions.com">Support</a><span class="system-status"><i></i> All systems operational</span></div></footer>
+    </section>
+  </main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="modal-backdrop" id="modalBackdrop"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-head"><div><span class="modal-eyebrow">NPK WORKSPACE</span><h2 id="modalTitle">Quick action</h2></div><button id="modalClose" class="close-btn" aria-label="Close">×</button></div><div id="modalBody"></div></div></div>
+<script src="app.js"></script>
+<script src="management.js"></script>
+</body></html>
